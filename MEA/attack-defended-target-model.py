@@ -7,8 +7,8 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 import random
 import time
-from a3_mnist import Lenet
-from a3_DEA.a3_defended_mnist import DefendedModel
+from MIA.a3_mnist import Lenet
+from a3_defended_mnist import DefendedModel
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

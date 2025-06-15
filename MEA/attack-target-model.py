@@ -10,7 +10,7 @@ import time
 from sklearn.metrics import accuracy_score
 import torch.nn as nn
 #importing the target model as required by the assignment
-from a3_mnist import Lenet
+from MIA.a3_mnist import Lenet
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 target_model = Lenet().to(device)
 target_model.load_state_dict(torch.load("defended_target_model.pt", map_location=device))
